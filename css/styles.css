@@ -61,6 +61,26 @@ table {
 }
 
 /*----------------COMING-SOON STYLESHEET BEGINS-----------------------*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+*::-moz-focus-inner {
+    border: 0;
+}
+
+*:focus {
+    outline: none;
+}
 
 body {
     /*height: 100%; */
@@ -176,13 +196,14 @@ body {
     font-weight: 600;
     letter-spacing: 2px;
     word-spacing: 2px;
-    margin-top: 5%;
+    margin-top: 13%;
     margin-bottom: 5%;
     color: #FAF0F7;
     background-color: #B80920;
     border: 2px solid #B80920;
     border-radius: 3px;
     cursor: pointer;
+    outline: none !important;
 
 }
 
@@ -190,9 +211,22 @@ body {
     color: #B80920;
     border: 2px solid #B80920;
     background: #FAF0F7;
-    outline: 0 none;
+    outline: none !important;
 
 }
+#Button-modal:focus,
+#Button-modal:active {
+    outline: none !important;
+}
+.btn:focus,
+.btn:active {
+    outline: none !important;
+}
+.btn-lg:focus,
+.btn-lg:active {
+    outline: none !important;
+}
+
 
 /* about-me-modal dialog*/
 
@@ -366,7 +400,7 @@ div.body-right {
 }
 
 #Social-media > a > i {
-    font-size: 11px;
+    font-size: 14px;
     padding: 0 3%;
     color: #23252f;
 }
@@ -484,7 +518,7 @@ div.body-right {
         letter-spacing: 2px;
         word-spacing: 2px;
         /*margin: 55px auto;*/
-        margin: 20px auto 10px;
+        margin: 40px auto 10px;
         color: #FAF0F7;
         background-color: #B80920;
         border: 2px solid #B80920;
@@ -492,6 +526,7 @@ div.body-right {
         cursor: pointer;
 
     }
+    
 
     /*----------Bottom Navigation for media (min-width: 574px) and (max-width: 992px)-------------*/
     #Bottom-navigation {
@@ -520,7 +555,7 @@ div.body-right {
     #Social-media > a > i {
         padding-right: 20px;
         color: #23252f;
-        font-size: 12px;
+        font-size: 16px;
     }
 
     #Copyright.navbar-text {
@@ -602,7 +637,7 @@ div.body-right {
         margin: 0;
     }
 
-    #about-me-modal.left-half. title,
+    #about-me-modal.left-half .title,
     #about-me-modal.right-half .title {
         font-family: "Open Sans", Arial, Helvetica, sans-serif;
         font-size: 9px;
@@ -769,7 +804,7 @@ div.body-right {
         letter-spacing: 2px;
         word-spacing: 2px;
         /*margin: 55px auto;*/
-        margin: 20px auto 10px;
+        margin: 8% auto 10px;
         color: #FAF0F7;
         background-color: #B80920;
         border: 2px solid #B80920;
@@ -805,7 +840,7 @@ div.body-right {
     #Social-media > a > i {
         padding-right: 20px;
         color: #23252f;
-        font-size: 13px;
+        font-size: 16px;
     }
 
     #Copyright.navbar-text {
@@ -970,10 +1005,6 @@ div.body-right {
         background-color: #23252f;
     }
 
-
-
-
-
     #Wrapper.container {
         max-width: 100vw;
 
@@ -1087,7 +1118,7 @@ div.body-right {
         display: inline-block;
         position: absolute;
         right: 0;
-        width: 45%;
+        width: 38%;
         margin: 5px auto;
         padding-right: 2%;
     }
@@ -1095,9 +1126,10 @@ div.body-right {
     #Social-media > a > i {
         padding-right: 20px;
         color: #23252f;
-        font-size: 18px;
+        font-size: 24px;
     }
     #Social-media > a > i {
+        font-size: 18px;
         transition: all 0.3s ease-in-out;
     }
 
@@ -1266,7 +1298,6 @@ div.body-right {
         letter-spacing: 2px;
 
     }
-
 
 }
 
