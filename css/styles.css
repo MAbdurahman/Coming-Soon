@@ -61,6 +61,26 @@ table {
 }
 
 /*----------------COMING-SOON STYLESHEET BEGINS-----------------------*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+*::-moz-focus-inner {
+    border: 0;
+}
+
+*:focus {
+    outline: none;
+}
 
 body {
     /*height: 100%; */
@@ -183,6 +203,7 @@ body {
     border: 2px solid #B80920;
     border-radius: 3px;
     cursor: pointer;
+    outline: none !important;
 
 }
 
@@ -190,9 +211,22 @@ body {
     color: #B80920;
     border: 2px solid #B80920;
     background: #FAF0F7;
-    outline: 0 none;
+    outline: none !important;
 
 }
+#Button-modal:focus,
+#Button-modal:active {
+    outline: none !important;
+}
+.btn:focus,
+.btn:active {
+    outline: none !important;
+}
+.btn-lg:focus,
+bt-lg:active {
+    outline: none !important;
+}
+
 
 /* about-me-modal dialog*/
 
@@ -492,6 +526,7 @@ div.body-right {
         cursor: pointer;
 
     }
+    
 
     /*----------Bottom Navigation for media (min-width: 574px) and (max-width: 992px)-------------*/
     #Bottom-navigation {

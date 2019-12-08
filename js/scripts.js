@@ -23,22 +23,22 @@
 
       /*** Countdown Timer */
       $("#days")
-          .countdown("2018/12/07", function (event) {
+          .countdown("2020/04/07", function (event) {
               $(this).html(event.strftime('%D <em>days</em>'))
           });
 
       $("#hours")
-          .countdown("2018/12/07", function (event) {
+          .countdown("2020/04/07", function (event) {
               $(this).html(event.strftime('%H <em>hrs</em>'))
           });
 
       $("#minutes")
-          .countdown("2018/12/07", function (event) {
+          .countdown("2020/04/07", function (event) {
               $(this).html(event.strftime('%M <em>mins</em>'))
           });
 
       $("#seconds")
-          .countdown("2018/12/07", function (event) {
+          .countdown("2020/04/07", function (event) {
               $(this).html(event.strftime('%S <em>secs</em>'))
           });
 
